@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header Ejemplo</title>
+  <title>WDD231 - David Perez</title>
+
+   <!-- Meta descripción relevante -->
+  <meta name="description" content="Página del curso WDD231 donde David Pérez presenta ejercicios de HTML, CSS y JavaScript, incluyendo cabecera, navegación y pie de página.">
+  <!-- Meta autor -->
+  <meta name="author" content="David Pérez">
+  
   <!-- Normalize CSS primero -->
   <link rel="stylesheet" href="styles/normalize.css">
   <!-- Tu hoja de estilos -->
@@ -27,11 +33,12 @@
       <li><a href="#">Contacto</a></li>
     </ul>
   </nav>
-
-  <main>
-    <h1>Bienvenido a mi sitio</h1>
-    <p>Este es un ejemplo de navegación responsive con header + menú.</p>
-  </main>
+<section class="main">
+    <main>
+      <h1>Bienvenido a mi sitio</h1>
+      <p>Este es un ejemplo de navegación responsive con header + menú.</p>
+    </main>
+</section>
 
   <footer>
   <div class="social-icons">
@@ -63,14 +70,8 @@
   </script>
 </footer>
 
-  <script>
-    const navButton = document.querySelector('#nav-button');
-    const navBar = document.querySelector('#nav-bar');
 
-    navButton.addEventListener('click', () => {
-      navButton.classList.toggle('show'); 
-      navBar.classList.toggle('show');  
-    });
-  </script>
+<script src="scripts/app.js"></script>
+
 </body>
 </html>
