@@ -1,0 +1,27 @@
+@media only screen and (min-width: 32rem) {
+  span {font-size: 2rem;}
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* ocultar botón */
+  }
+
+  .navigation {
+    display: block; /* siempre visible */
+  }
+
+  .navigation ul {
+    display: flex; /* links en fila */
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .navigation li {
+    border: none;
+  }
+
+  .navigation li a {
+    padding: 10px 15px;
+  }
+}

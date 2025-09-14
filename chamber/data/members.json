@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Tech Solutions",
+    "address": "123 Main St, Cityville",
+    "phone": "555-1234",
+    "website": "https://techsolutions.com",
+    "image": "https://images.pexels.com/photos/3779174/pexels-photo-3779174.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 3,
+    "tagline": "Innovative Tech for a Modern World"
+  },
+  {
+    "name": "Green Market",
+    "address": "456 Oak Ave, Cityville",
+    "phone": "555-5678",
+    "website": "https://greenmarket.com",
+    "image": "https://images.pexels.com/photos/7078057/pexels-photo-7078057.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 2,
+    "tagline": "Fresh, Local, and Sustainable"
+  },
+  {
+    "name": "City Bank",
+    "address": "789 Center Rd, Cityville",
+    "phone": "555-9012",
+    "website": "https://citybank.com",
+    "image": "https://images.pexels.com/photos/7058051/pexels-photo-7058051.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 1,
+    "tagline": "Your Financial Partner for Life"
+  },
+  {
+    "name": "Fitness Pro",
+    "address": "321 Fitness St, Cityville",
+    "phone": "555-3456",
+    "website": "https://fitnesspro.com",
+    "image": "https://images.pexels.com/photos/3779154/pexels-photo-3779154.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 3,
+    "tagline": "Achieve Your Fitness Goals"
+  },
+  {
+    "name": "Book Haven",
+    "address": "654 Library Ln, Cityville",
+    "phone": "555-7890",
+    "website": "https://bookhaven.com",
+    "image": "https://images.pexels.com/photos/3779254/pexels-photo-3779254.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 2,
+    "tagline": "Where Stories Come to Life"
+  },
+  {
+    "name": "Auto Care",
+    "address": "987 Auto Blvd, Cityville",
+    "phone": "555-2345",
+    "website": "https://autocare.com",
+    "image": "https://images.pexels.com/photos/7058211/pexels-photo-7058211.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 1,
+    "tagline": "Quality Service for Your Vehicle"
+  },
+  {
+    "name": "Culinary Delights",
+    "address": "159 Food Ct, Cityville",
+    "phone": "555-6789",
+    "website": "https://culinarydelights.com",
+    "image": "https://images.pexels.com/photos/3779154/pexels-photo-3779154.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 3,
+    "tagline": "Exquisite Flavors, Unforgettable Experiences"
+  },
+  {
+    "name": "Travel Experts",
+    "address": "753 Journey Rd, Cityville",
+    "phone": "555-0123",
+    "website": "https://travelexperts.com",
+    "image": "https://images.pexels.com/photos/3779254/pexels-photo-3779254.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 2,
+    "tagline": "Your Adventure Awaits"
+  },
+  {
+    "name": "Home Decor",
+    "address": "852 Style St, Cityville",
+    "phone": "555-4567",
+    "website": "https://homedecor.com",
+    "image": "https://images.pexels.com/photos/7058211/pexels-photo-7058211.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load",
+    "membership": 1,
+    "tagline": "Style Your Home, Style Your Life"
+  }
+]
