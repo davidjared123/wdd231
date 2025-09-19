@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary: #1A202C;
+  --secondary: #2D3748;
+  --accent: #4FD1C5;
+  --bg: #F7FAFC;
+  --text: #1A202C;
+  --card-bg: #FFFFFF;
+  --font-main: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+}
+
+header span {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navigation {
+    background-color: var(--primary);
+}
+
+.navigation li a {
+    color: white;
+    font-family: var(--font-main);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navigation li a:hover {
+    color: var(--accent);
+}
+
+.navigation li.current a {
+    color: var(--accent);
+}
+
+main {
+    padding: 1.5rem;
+}
+
+section {
+    background-color: var(--card-bg);
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+section h2 {
+    font-family: var(--font-main);
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.temple {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.temple h2 {
+    color: white;
+}
+
+#course-cards {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-card {
+  background-color: var(--bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+#total-credits {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.certificate div:last-of-type button {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--secondary);
+    background-color: transparent;
+    color: var(--secondary);
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 0 0.5rem 0 0;
+    border-radius: 50px;
+}
+
+.certificate div:last-of-type button:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+footer {
+  background-color: var(--primary);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .social-icons a svg path {
+    fill: white;
+}

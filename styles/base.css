@@ -1,27 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 /* HEADER */
 header {
   display: grid;
   grid-template-columns: 24px auto 44px;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #ddd;
 }
 
 header img {
   width: 24px;
   height: 24px;
-}
-
-header span {
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 /* BOTÓN HAMBURGUESA */
@@ -30,6 +17,7 @@ header span {
   background: none;
   font-size: 24px;
   cursor: pointer;
+  color: white; /* Added to be visible on dark background */
 }
 
 .hamburger::before {
@@ -43,8 +31,6 @@ header span {
 /* NAVIGATION */
 .navigation {
   display: none;
-  background: #f8f9fa;
-  border-bottom: 1px solid #ddd;
 }
 
 .navigation ul {
@@ -53,20 +39,10 @@ header span {
   padding: 0;
 }
 
-.navigation li {
-  border-top: 1px solid #eee;
-}
-
 .navigation li a {
   display: block;
   padding: 12px 20px;
   text-decoration: none;
-  color: #333;
-}
-
-.navigation li.current a {
-  background: #ddd;
-  font-weight: bold;
 }
 
 .navigation.show {
@@ -74,12 +50,9 @@ header span {
 }
 
 /* footer  */
-
 footer {
-  background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
-  border-top: 1px solid #ddd;
 }
 
 footer .social-icons {
@@ -98,8 +71,4 @@ footer .social-icons a svg {
 footer .footer-info p {
   margin: 5px 0;
   font-size: 0.9rem;
-  color: #333;
 }
-
-/* REGLA SOLICITADA */
-span p {font-size: 1.5rem;}

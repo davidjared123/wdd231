@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Barquisimeto Chamber of Commerce - Directory Page">
+  <meta name="description" content="Welcome to the Barquisimeto Chamber of Commerce. Join us to grow your business and connect with the community.">
   <meta name="author" content="David Perez">
-  <title>Barquisimeto Chamber of Commerce - Directory</title>
+  <title>Barquisimeto Chamber of Commerce - Home</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Open Graph Meta -->
-  <meta property="og:title" content="City Chamber of Commerce">
-  <meta property="og:description" content="Explore our business members in the Chamber Directory">
+  <meta property="og:title" content="Barquisimeto Chamber of Commerce">
+  <meta property="og:description" content="Welcome to the Barquisimeto Chamber of Commerce. Join us to grow your business and connect with the community.">
   <meta property="og:image" content="https://tu-github-url/images/og-image.jpg">
-  <meta property="og:url" content="https://tu-github-username.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://tu-github-username.github.io/wdd231/chamber/index.html">
 
   <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -22,8 +22,8 @@
     <div class="logo">3D Barquisimeto</div>
     <button id="menu-btn">☰</button>
     <nav id="nav">
-      <a href="../index.html">Home</a>
-      <a href="#">Directory</a>
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
       <a href="#">Join</a>
       <a href="#">Discover</a>
         <a href="#">╗</a>
@@ -31,11 +31,11 @@
   </header>
 
   <section class="hero-img">
-    <img src="images/hero.jpg" alt="Chamber of Commerce Directory">
+    <img src="images/hero.jpg" alt="Team Work chamber of commerce">
+    <a href="#" class="hero-btn">Join the Chamber</a>
   </section>
 
   <main>
-    <h1>Our Business Directory</h1>
     <div class="home-cards">
         <section class="events card">
           <h2>Eventos</h2>
@@ -68,11 +68,13 @@
         </section>
     </div>
 
-  <div class="view-toggle">
-      <button id="gridView">Grid View</button>
-      <button id="listView">List View</button>
-    </div>
-    <section id="membersContainer" class="grid"></section>
+    <section class="spotlights">
+        <h2>Company Spotlights</h2>
+        <div class="spotlight-cards">
+            <!-- Spotlights will be dynamically inserted here -->
+        </div>
+    </section>
+
   </main>
 
   <footer>
@@ -81,6 +83,7 @@
     <div>WDD231 Project - David Jared Perez Alvarez - Last Modified: <span id="lastModified"></span></div>
   </footer>
 
+  <script src="js/config.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
