@@ -1,0 +1,43 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main # O la rama que uses para desplegar
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18' # Ajusta la versión de Node.js según tu proyecto
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+      env:
+        # Aquí es donde pasas tu secreto de GitHub a una variable de entorno
+        # El nombre de la variable de entorno (por ejemplo, VITE_API_KEY)
+        # debe coincidir con cómo tu aplicación espera leerla.
+        API_KEY: ${{ secrets.API_KEY }}
+        # Si usas un framework como Vite, Next.js, etc., que prefieren prefijos,
+        # podrías usar algo como:
+        # VITE_API_KEY: ${{ secrets.API_KEY }}
+        # REACT_APP_API_KEY: ${{ secrets.API_KEY }}
+
+    # Puedes añadir más pasos aquí, como desplegar tu aplicación
+    # Por ejemplo, si necesitas la API_KEY para un paso de despliegue:
+    # - name: Deploy to hosting
+    #   run: |
+    #     echo "Deploying with API Key..."
+    #     # Comando de despliegue que usa la API_KEY
+    #   env:
+    #     API_KEY: ${{ secrets.API_KEY }}
