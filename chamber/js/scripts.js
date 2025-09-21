@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Barquisimeto coordinates
     const lat = 10.075;
     const lon = -69.322;
-    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=en`;
 
     try {
       const response = await fetch(forecastUrl);
