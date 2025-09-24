@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Barquisimeto Chamber of Commerce and become a member.">
+  <meta name="author" content="David Perez">
+  <title>Join the Barquisimeto Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Join the Barquisimeto Chamber of Commerce">
+  <meta property="og:description" content="Join the Barquisimeto Chamber of Commerce and become a member.">
+  <meta property="og:image" content="https://tu-github-url/images/og-image.jpg">
+  <meta property="og:url" content="https://tu-github-username.github.io/wdd231/chamber/join.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">3D Barquisimeto</div>
+    <button id="menu-btn">☰</button>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="#">Discover</a>
+      <a href="#">╗</a>
+    </nav>
+  </header>
+
+  <main class="join-main">
+    <form action="thankyou.html" method="get" class="join-form">
+      <div class="form-row">
+        <label>First Name* <input type="text" name="fname" required title="First Name" autocomplete="given-name"></label>
+        <label>Last Name* <input type="text" name="lname" required title="Last Name" autocomplete="family-name"></label>
+      </div>
+      <div class="form-row">
+        <label>Email* <input type="email" name="email" required title="Email" autocomplete="email" placeholder="example@email.com"></label>
+        <label>Mobile Phone* <input type="tel" name="phone" required title="Mobile Phone" autocomplete="tel"></label>
+      </div>
+      <label>Organizational Title <input type="text" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[a-zA-Z\s-]{7,}"></label>
+      <label>Business/Organization Name* <input type="text" name="business" required title="Business/Organization Name" autocomplete="organization"></label>
+      
+      <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" name="membership" value="np"> NP Membership (Non-Profit)</label>
+        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+        <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+      </fieldset>
+
+      <label>Business/Organization Description <textarea name="description" title="Business/Organization Description"></textarea></label>
+      
+      <input type="hidden" id="timestamp" name="timestamp">
+      <input type="submit" value="Join the Chamber">
+    </form>
+
+    <div class="membership-cards">
+      <div class="card" id="np-card">
+        <h3>NP Membership</h3>
+        <p>For non-profit organizations.</p>
+        <a href="#" id="np-details">View Benefits</a>
+      </div>
+      <div class="card" id="bronze-card">
+        <h3>Bronze Membership</h3>
+        <p>Basic membership level.</p>
+        <a href="#" id="bronze-details">View Benefits</a>
+      </div>
+      <div class="card" id="silver-card">
+        <h3>Silver Membership</h3>
+        <p>Intermediate membership level.</p>
+        <a href="#" id="silver-details">View Benefits</a>
+      </div>
+      <div class="card" id="gold-card">
+        <h3>Gold Membership</h3>
+        <p>Premium membership level.</p>
+        <a href="#" id="gold-details">View Benefits</a>
+      </div>
+    </div>
+  </main>
+
+  <dialog id="np-modal">
+    <button id="close-np-modal">❌</button>
+    <h2>NP Membership Benefits</h2>
+    <ul>
+      <li>Benefit 1</li>
+      <li>Benefit 2</li>
+    </ul>
+  </dialog>
+  <dialog id="bronze-modal">
+    <button id="close-bronze-modal">❌</button>
+    <h2>Bronze Membership Benefits</h2>
+    <ul>
+      <li>Benefit 1</li>
+      <li>Benefit 2</li>
+      <li>Benefit 3</li>
+    </ul>
+  </dialog>
+  <dialog id="silver-modal">
+    <button id="close-silver-modal">❌</button>
+    <h2>Silver Membership Benefits</h2>
+    <ul>
+      <li>Benefit 1</li>
+      <li>Benefit 2</li>
+      <li>Benefit 3</li>
+      <li>Benefit 4</li>
+    </ul>
+  </dialog>
+  <dialog id="gold-modal">
+    <button id="close-gold-modal">❌</button>
+    <h2>Gold Membership Benefits</h2>
+    <ul>
+      <li>Benefit 1</li>
+      <li>Benefit 2</li>
+      <li>Benefit 3</li>
+      <li>Benefit 4</li>
+      <li>Benefit 5</li>
+    </ul>
+  </dialog>
+
+  <footer>
+    <div>© <span id="year"></span> 3D Barquisimeto Chamber of Commerce</div>
+    <div class="social">🌐 IG | FB | TW</div>
+    <div>WDD231 Project - David Jared Perez Alvarez - Last Modified: <span id="lastModified"></span></div>
+  </footer>
+
+  <script src="js/join.js"></script>
+</body>
+</html>

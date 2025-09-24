@@ -332,9 +332,231 @@ footer .social {
     margin-bottom: 0.5rem;
 }
 
+/* Join Page Styles */
+.join-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.join-form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.join-form legend {
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.join-form fieldset label {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+}
+
+.join-form input[type="submit"] {
+  padding: 1rem;
+  background-color: var(--accent);
+  color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-form input[type="submit"]:hover {
+  background-color: #3db3a7;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.membership-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  animation: card-load 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.membership-cards .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.membership-cards .card p {
+  margin-bottom: 1rem;
+}
+
+.membership-cards .card a {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: var(--primary);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.membership-cards .card a:hover {
+  background-color: #3db3a7;
+}
+
+@keyframes card-load {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.membership-cards .card:nth-child(1) { animation-delay: 0.1s; }
+.membership-cards .card:nth-child(2) { animation-delay: 0.2s; }
+.membership-cards .card:nth-child(3) { animation-delay: 0.3s; }
+.membership-cards .card:nth-child(4) { animation-delay: 0.4s; }
+
+
+@media (min-width: 1024px) {
+  .join-main {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Dialog Styles */
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+dialog ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+dialog ul li {
+  margin-bottom: 0.5rem;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  background: #eee;
+  cursor: pointer;
+}
+
+/* Thank You Page Styles */
+.thankyou-main {
+  text-align: center;
+}
+
+#form-data-card {
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+#form-data-card h2 {
+  background-color: var(--secondary);
+  color: white;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-main);
+}
+
+#form-data-card ul {
+  list-style-type: none;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+#form-data-card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+#form-data-card ul li:last-child {
+  border-bottom: none;
+}
+
+#form-data-card ul li strong {
+  color: var(--primary);
+}
+
+/* Membership Card Colors */
+#np-card {
+  border-top: 5px solid #ccc;
+}
+
+#bronze-card {
+  border-top: 5px solid var(--accent);
+}
+
+#silver-card {
+  border-top: 5px solid #3db3a7; /* A darker shade of accent */
+}
+
+#gold-card {
+  border-top: 5px solid var(--secondary);
+}
+
 /* === MEDIA QUERIES === */
 
 @media (min-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
     /* Nav */
     #menu-btn { display: none; }
     nav { position: static; display: flex; flex-direction: row; gap: 2rem; background: none; padding: 0; z-index: auto; border-radius: 0; }

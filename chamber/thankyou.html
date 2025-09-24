@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for joining the Barquisimeto Chamber of Commerce.">
+  <meta name="author" content="David Perez">
+  <title>Thank You - Barquisimeto Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">3D Barquisimeto</div>
+    <button id="menu-btn">☰</button>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="#">Discover</a>
+      <a href="#">╗</a>
+    </nav>
+  </header>
+
+  <main class="thankyou-main">
+    <h1>Thank You for Joining!</h1>
+    <p>We have received your application. Here is the information you submitted:</p>
+    <div id="form-data-card" class="card"></div>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> 3D Barquisimeto Chamber of Commerce</div>
+    <div class="social">🌐 IG | FB | TW</div>
+    <div>WDD231 Project - David Jared Perez Alvarez - Last Modified: <span id="lastModified"></span></div>
+  </footer>
+
+  <script>
+    const formDataContainer = document.getElementById('form-data-card');
+    const urlParams = new URLSearchParams(window.location.search);
+
+    let dataHtml = '<div class="card-content">';
+    dataHtml += '<h2>Application Summary</h2>';
+    dataHtml += '<ul>';
+    for (const [key, value] of urlParams.entries()) {
+      // Capitalize key
+      const capitalizedKey = key.charAt(0).toUpperCase() + key.slice(1);
+      dataHtml += `<li><strong>${capitalizedKey}:</strong> ${value}</li>`;
+    }
+    dataHtml += '</ul>';
+    dataHtml += '</div>';
+
+    formDataContainer.innerHTML = dataHtml;
+
+    // Footer date
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+</body>
+</html>
