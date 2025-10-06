@@ -1,0 +1,52 @@
+{
+  "attractions": [
+    {
+      "name": "The Cathedral of Barquisimeto",
+      "address": "Av. Venezuela, Barquisimeto, Lara",
+      "description": "An architectural masterpiece and a symbol of the city, known for its unique modernist design that resembles an inverted flower.",
+      "image": "https://2.bp.blogspot.com/-EBeETjGhF50/VHdTHC6KiFI/AAAAAAAAB48/AmMuYr8p7_k/s1600/iglesia.6.%2Bla%2Bcatedral%2Bmetropolitana%2Bde%2Bbarquisimeto.jpg"
+    },
+    {
+      "name": "La Flor de Venezuela",
+      "address": "Av. Venezuela con Av. Argimiro Bracamonte, Barquisimeto, Lara",
+      "description": "A national monument featuring a retractable roof of sixteen petals that open and close. It hosts art and cultural exhibitions.",
+      "image": "https://materialcultural.com/wp-content/uploads/2017/08/20170809_01_EVENTOS_CONVERSATORIO-FLOR.jpg"
+    },
+    {
+      "name": "Parque Zoológico y Botánico Bararida",
+      "address": "Av. Los Abogados, Barquisimeto, Lara",
+      "description": "A vast park that is home to a diverse collection of animals and native plant species, offering a great experience for families.",
+      "image": "https://estatico.mazo4f.com/1608048696569232389g.jpg"
+    },
+    {
+      "name": "Monumento al Sol Naciente",
+      "address": "Redoma El Obelisco, Barquisimeto, Lara",
+      "description": "A kinetic sculpture by artist Carlos Cruz-Diez, this monument is a vibrant and colorful landmark that celebrates the city's sunsets.",
+      "image": "https://i0.wp.com/www.cabudaredigital.com/web/wp-content/uploads/2023/07/IMG-20230712-WA0011.jpg"
+    },
+    {
+      "name": "El Obelisco de Barquisimeto",
+      "address": "Av. Pedro León Torres, Barquisimeto, Lara",
+      "description": "An iconic obelisk built to celebrate the city's 400th anniversary. It stands as a major landmark and reference point in the west of the city.",
+      "image": "https://gentelonuestro.net/revista/wp-content/uploads/2022/08/obelisco-1.jpg"
+    },
+    {
+      "name": "Teatro Juares",
+      "address": "Carrera 19 con Calle 25, Barquisimeto, Lara",
+      "description": "A historic and beautifully restored theater that serves as the premier venue for plays, concerts, and cultural events in the city.",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxlz0TYFVjkTpNYfRGMEf3KTnyjpV1ow_r7mYvryv_Zs4fjV4UQQLzRXzpqGfEFYvZW4uBi78EamTflOioWB0cn6PhoTGhhQqfoknEkBnK4RpALqhj_FzqABTnZXTfbGzYBU5_y6LhCaog/s1600/Bildschirmfoto2010-06-25um124944.png"
+    },
+    {
+      "name": "Loma de León",
+      "address": "Barquisimeto, Lara",
+      "description": "A natural lookout point offering panoramic views of the city and the Turbio River valley. A popular spot for hiking and recreation.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Camino_al_monumento_natural_loma_de_leon.jpg"
+    },
+    {
+      "name": "Mercado de Tintorero",
+      "address": "Tintorero, Lara",
+      "description": "A famous artisan market located just outside Barquisimeto, known for its high-quality woven goods, crafts, and local food.",
+      "image": "https://avn.info.ve/wp-content/uploads/2025/08/IMG_3430.jpeg"
+    }
+  ]
+}

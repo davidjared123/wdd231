@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the attractions and points of interest in the Barquisimeto area. Plan your visit.">
+  <meta name="author" content="David Perez">
+  <title>Barquisimeto Chamber of Commerce - Discover</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Discover Barquisimeto">
+  <meta property="og:description" content="Explore the vibrant attractions, culture, and landmarks of Barquisimeto.">
+  <meta property="og:image" content="https://tu-github-url/images/og-image.jpg">
+  <meta property="og:url" content="https://tu-github-username.github.io/wdd231/chamber/discover.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">3D Barquisimeto</div>
+    <button id="menu-btn">☰</button>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html" class="active">Discover</a>
+        <a href="#">╗</a>
+    </nav>
+  </header>
+
+  <main class="discover-main">
+    <aside class="sidebar">
+        <h2>Visit Information</h2>
+        <p id="visit-message"></p>
+    </aside>
+    <div id="attractions-grid" class="attractions-grid">
+        <!-- Attraction cards will be inserted here by JavaScript -->
+    </div>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> 3D Barquisimeto Chamber of Commerce</div>
+    <div class="social">🌐 IG | FB | TW</div>
+    <div>WDD231 Project - David Jared Perez Alvarez - Last Modified: <span id="lastModified"></span></div>
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/discover.js"></script>
+</body>
+</html>

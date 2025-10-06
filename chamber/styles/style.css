@@ -597,3 +597,119 @@ dialog button {
         grid-row: auto; /* Reset grid behavior */
     }
 }
+
+/* === Discover Page === */
+
+.discover-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.sidebar {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.sidebar h2 {
+    font-family: var(--font-main);
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.attraction-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border-left: 5px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+}
+
+.attraction-card h2 {
+    font-family: var(--font-main);
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    margin: 0;
+}
+
+.attraction-card figure {
+    margin: 0;
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.attraction-card address,
+.attraction-card p {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.attraction-card address {
+    font-style: normal;
+    color: #555;
+}
+
+.attraction-card button {
+    margin: 1.5rem;
+    padding: 0.75rem;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Pushes button to the bottom */
+}
+
+.attraction-card button:hover {
+    background-color: var(--primary);
+}
+
+
+/* Discover Page Media Queries */
+
+@media (min-width: 641px) {
+    .discover-main {
+        grid-template-columns: 250px 1fr; /* Sidebar and main content */
+        grid-template-areas: "sidebar main";
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .attractions-grid {
+        grid-area: main;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Hover effect for non-mobile */
+    .attraction-card figure:hover img {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
