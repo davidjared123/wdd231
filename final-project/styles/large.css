@@ -1,0 +1,52 @@
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .nav-menu ul li a {
+        padding: 0;
+    }
+
+    .nav-menu ul li a:hover {
+        background-color: transparent;
+        color: var(--primary-blue);
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .class-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-content {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    form button {
+        width: auto;
+    }
+
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Music Academy Website</title>
+    <meta name="description" content="Form submission confirmation.">
+    <meta name="author" content="Your Name Here">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Music Academy Website</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="submission-thanks">
+            <div class="container">
+                <h2>¡Gracias por tu mensaje!</h2>
+                <p>Hemos recibido la siguiente información:</p>
+                <div id="submitted-data"></div>
+                <a href="index.html" class="btn" style="margin-top: 2rem;">Volver al Inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-right">
+                <p>&copy; <span id="current-year"></span> Music Academy Website</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const submittedDataDiv = document.getElementById('submitted-data');
+            const params = new URLSearchParams(window.location.search);
+
+            let dataHtml = '<ul>';
+            for (const [key, value] of params.entries()) {
+                dataHtml += `<li><strong>${key}:</strong> ${value}</li>`;
+            }
+            dataHtml += '</ul>';
+
+            submittedDataDiv.innerHTML = dataHtml;
+        });
+    </script>
+</body>
+</html>

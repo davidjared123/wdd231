@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Sefis Ramírez",
+    "instrument": "Singing",
+    "imageUrl": "images/teacher-1.png",
+    "bio": "Sefis is a vocal coach with a focus on technique, performance, and building confidence."
+  },
+  {
+    "name": "John Doe",
+    "instrument": "Cello",
+    "imageUrl": "images/teacher-2.png",
+    "bio": "John is a passionate cellist, with a classical and contemporary formation."
+  },
+  {
+    "name": "Jane Smith",
+    "instrument": "Piano",
+    "imageUrl": "images/teacher-3.png",
+    "bio": "With over 20 years of experience, Jane is a master of classical and contemporary piano."
+  },
+  {
+    "name": "Peter Jones",
+    "instrument": "Musical Theory",
+    "imageUrl": "images/teacher-4.jpg",
+    "bio": "Peter's expertise in musical theory helps students find their unique creative voice."
+  },
+  {
+    "name": "Maria Garcia",
+    "instrument": "Percussion",
+    "imageUrl": "images/teacher-5.png",
+    "bio": "Maria combines traditional methods with modern technology to create engaging percussion lessons."
+  },
+  {
+    "name": "David Rodriguez",
+    "instrument": "Violin",
+    "imageUrl": "images/teacher-6.png",
+    "bio": "David teaches classical and modern violin, bringing a touch of passion to his lessons."
+  },
+  {
+    "name": "Emily White",
+    "instrument": "Classic Guitar",
+    "imageUrl": "images/teacher-7.png",
+    "bio": "Emily is a passionate guitarist specializing in rock, blues, and acoustic styles."
+  },
+  {
+    "name": "Michael Brown",
+    "instrument": "Musical Direction",
+    "imageUrl": "images/teacher-8.png",
+    "bio": "A specialist in musical direction, Michael helps students expand their creative horizons."
+  }
+]

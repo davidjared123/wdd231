@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Teachers - Music Academy Website</title>
+    <meta name="description" content="Meet the talented and experienced teachers at the Music Academy.">
+    <meta name="author" content="Your Name Here">
+
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="og:title" content="Our Teachers - Music Academy Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/final-project/teachers.html">
+    <meta property="og:description" content="Meet the talented and experienced teachers at the Music Academy.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/teachers.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Music Academy Website</a>
+            <button class="hamburger">&#9776;</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teachers.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="teachers-page">
+            <div class="container">
+                <h2>Meet Our Teachers</h2>
+                <div id="teachers-grid" class="teacher-cards">
+                    <!-- Teacher profiles will be loaded here dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="teacher-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="Teacher Image">
+            <h3 id="modal-name"></h3>
+            <h4 id="modal-instrument"></h4>
+            <p id="modal-bio"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <a href="index.html" class="logo">Music Academy Website</a>
+            </div>
+            <div class="footer-center">
+                <a href="index.html">Home</a>
+                <a href="teachers.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="attributions.html">Attributions</a>
+                <a href="#" id="video-link">Project Video</a>
+            </div>
+            <div class="footer-right">
+                <p>&copy; <span id="current-year"></span> Music Academy Website</p>
+                <div class="social-icons">
+                    <!-- Social icons can be added here -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

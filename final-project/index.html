@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Academy Website</title>
+    <meta name="description" content="Welcome to the Music Academy. We offer inspiring lessons in piano, guitar, and singing to help you unlock your musical potential.">
+    <meta name="author" content="Your Name Here">
+
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="og:title" content="Music Academy Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/final-project/">
+    <meta property="og:description" content="Unlock your musical potential with expert lessons in piano, guitar, and singing.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Music Academy Website</a>
+            <button class="hamburger">&#9776;</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teachers.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-lg.png" media="(min-width: 768px)">
+                <img src="images/hero-sm.png" alt="Students playing various instruments">
+            </picture>
+            <div class="hero-content">
+                <h1>Unlock Your Musical Potential</h1>
+                <p>Inspiring Lessons in Piano, Guitar & Singing</p>
+                <a href="contact.html" class="btn">Start Today!</a>
+            </div>
+        </section>
+
+        <section class="classes">
+            <div class="container">
+                <h2>Our Classes</h2>
+                <div class="class-cards">
+                    <div class="card">
+                        <div class="card-icon">&#9839;</div>
+                        <h3>Singing Class</h3>
+                        <p>Sefis is a vocal coach with a focus on technique, performance, and building confidence.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#127928;</div>
+                        <h3>Cello Class</h3>
+                        <p>John is a passionate cellist, with a classical and contemporary formation.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#127908;</div>
+                        <h3>Piano Class</h3>
+                        <p>With over 20 years of experience, Jane is a master of classical and contemporary piano.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teachers">
+            <div class="container">
+                <h2>Meet Our Teachers</h2>
+                <div class="teacher-cards">
+                    <!-- Teacher cards will be dynamically loaded on the teachers page, here are static examples -->
+                    <div class="teacher-card">
+                        <img src="images/teacher-1.png" alt="Sefis Ramírez" loading="lazy">
+                        <h4>Sefis Ramírez</h4>
+                        <p>Singing Teacher</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="images/teacher-2.png" alt="John Doe" loading="lazy">
+                        <h4>John Doe</h4>
+                        <p>Cello Teacher</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="images/teacher-3.png" alt="Jane Smith" loading="lazy">
+                        <h4>Jane Smith</h4>
+                        <p>Piano Teacher</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="images/teacher-4.jpg" alt="Peter Jones" loading="lazy">
+                        <h4>Peter Jones</h4>
+                        <p>Music Theory Teacher</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <form action="form-submitted.html" method="get">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <ul>
+                            <li><strong>Phone:</strong> (123) 456-7890</li>
+                            <li><strong>Email:</strong> contact@musicacademy.org</li>
+                            <li><strong>Address:</strong> 123 Music Lane, Harmony City</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <a href="index.html" class="logo">Music Academy Website</a>
+            </div>
+            <div class="footer-center">
+                <a href="index.html">Home</a>
+                <a href="teachers.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="attributions.html">Attributions</a>
+                <!-- The video link will be added here -->
+                <a href="#" id="video-link">Project Video</a>
+            </div>
+            <div class="footer-right">
+                <p>&copy; <span id="current-year"></span> Music Academy Website</p>
+                <div class="social-icons">
+                    <!-- Social icons can be added here -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+ter>
+</body>
+</html>
